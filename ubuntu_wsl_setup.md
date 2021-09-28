@@ -9,7 +9,7 @@ sudo apt upgrade
 # various
 
 ```sh
-sudo apt install locales-all pkg-config
+sudo apt install locales-all pkg-config zip unzip
 ```
 
 # ssh
@@ -23,6 +23,7 @@ ssh-add $HOME/.ssh/id_XXX
 ## zsh
 
 ```sh
+sudo apt install zsh
 chsh -s /usr/bin/zsh
 
 # install commandが失敗するのでgit cloneを使った
@@ -46,13 +47,15 @@ arr="
   .zprofile
   os
 "
-for fname in $arr; do ln -s ~/dotfiles/$fname .; done
+for fname in $arr; do ln -s ~/dotfiles/$fname ~/; done
 ```
 
 ## Node
 
 ```sh
 sudo apt install npm yarn
+npm install -g n
+n stable
 ```
 
 
