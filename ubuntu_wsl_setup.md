@@ -6,7 +6,7 @@ sudo apt upgrade
 ```
 
 
-# vaious
+# various
 
 ```sh
 sudo apt install locales-all pkg-config
