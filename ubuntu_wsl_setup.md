@@ -73,6 +73,30 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install cargo-edit
 ```
 
+## Go
+
+```sh
+# versionは最新に
+wget https://golang.org/dl/go1.17.1.linux-amd64.tar.gz
+
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.1.linux-amd64.tar.gz
+```
+
+## Scala
+
+```sh
+# install sdkman
+# 必要なjavaなどをまとめて準備できる
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk version
+```
+
+```sh
+sdk install java $(sdk list java | grep -o "8\.[0-9]*\.[0-9]*\.hs-adpt" | head -1)
+sdk install sbt
+```
+
 ## neovim
 
 ```sh
